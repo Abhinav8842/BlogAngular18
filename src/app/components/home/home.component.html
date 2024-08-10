@@ -1,0 +1,21 @@
+<div class="flex flex-col justify-center items-center px-20 h-80">
+  <h1 class="text-3xl font-bold">Welcome to Code with Ved Blogs</h1>
+  <p class="w-6/12">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum nisi
+    ipsam eum et minima commodi molestiae in, quisquam nihil voluptatum ab
+    veritatis, quaerat assumenda unde quibusdam quas vel magni? Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Similique amet numquam quasi
+    sed perferendis quod aliquid iste. Quis eligendi harum nulla eos veniam iste
+    libero aut. Odit voluptatibus enim provident?
+  </p>
+</div>
+<div class="flex flex-col items-center px-20 mb-10">
+  <h2 class="text-xl font-bold">Featured blogs</h2>
+  <div class="flex flex-wrap gap-4">
+    @for (blog of featuredBlogs; track $index) {
+    <div class="w-3/12">
+      <app-blog-card [blog]="blog"></app-blog-card>
+    </div>
+    }
+  </div>
+</div>
